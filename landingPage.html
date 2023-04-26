@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .relativePosition {
+      position: relative;
+    }
+
+    @media (min-width: 1500px) {
+      .absolutePos {
+        position: absolute;
+        width: 30%;
+      }
+    }
+
+    @media (max-width: 1499px) {
+      .absolutePos {
+        text-align: center;
+        margin: 10px auto 10px auto;
+        width: 50%;
+        padding: 30px 50px;
+      }
+    }
+
+    .absolutePos {
+      top: 15%;
+      left: 5%;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .navbar {
+      padding: 16px 5%;
+    }
+
+    .MSLogo1 {
+      padding-right: 30px;
+      border-right: 2px solid black;
+    }
+
+    .nav-link {
+      /* padding-left: 12px; */
+      padding-top: 11px;
+    }
+
+    .itemlistings {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .itemlistings:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .itemlistings::after {
+      content: ">";
+      text-decoration: none;
+      margin: 0 10px 0 10px;
+    }
+    #navbarSupportedContent1 {
+      align-content: flex-end;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="MSLogo1" href="#">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+            alt="MSLogo"
+            height="24px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li
+              class="nav-item active"
+              style="margin-left: 10px; font-weight: 600"
+            >
+              <a class="nav-link" href="#"
+                >Surface <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Computers
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Computers for Business
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accessories
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop now
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+              alt="Shopping Cart"
+              height="30px"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+              alt="User"
+              height="30px"
+              style="margin-left: 10px;"
+            />
+          </div>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </nav>
+    </header>
+    <article>
+      <div class="relativePosition">
+        <div class="absolutePos">
+          <h1>Laptops designed by Microsoft</h1>
+          <h2>
+            Surface computers do more while using less power. All Surface laptop
+            and tablet devices are ENERGY STAR certified with a focus towards
+            energy efficiency and battery life.
+          </h2>
+          <p class="itemlistings">Laptops</p>
+          <p class="itemlistings">Tablets</p>
+          <p class="itemlistings">Desktop Computers</p>
+          <p class="itemlistings">Explore all</p>
+        </div>
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero_FY24_Surface-homepage_169?scl=1"
+          alt="MSStore"
+          width="100%"
+        />
+      </div>
+    </article>
+  </body>
+</html>
